@@ -3,34 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>สกีบีดี้</title>
 </head>
 <body>
-    <header>
-        <h1>Data Visualization Dashboard</h1>
+    <header class="page-header">
+        <h1 id="page-title">Data Visualization Dashboard</h1>
+        <div class="user-Profile">
+            <span>ยินดีต้อนรับ, สกีบีดี้</span>
+        </div>
     </header>
-
-    <aside>
+<div class="dasboad-container">
+    <aside class="sidebar">
         <nav>
             <ul>
-            <li><a href="#">Dashboard</a></li>
+            <li><a href="https://www.tiktok.com/@bammmm258/video/7552931077959077138?is_from_webapp=1&sender_device=pc&web_id=7430096703628445192">Dashboard</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Customers</a></li>
             </ul>
         </nav>
     </aside>
 
-    <main>
+    <main class="main-content">
         <div class="card">
             <h2>ยอดขายรวม</h2>
             <p>1,234,567 บาท</p>
+        </div>
+
+        <div class="card">
+            <h2>ผู้ใช้งานใหม่</h2>
+            <p>352 คน</p>
+        </div>
+
+        <div class="card">
+            <h2>คําสั่งซื้อ</h2>
+            <p>89 รายการ</p>
         </div>
         
         <div class="chart-container">
             <h2>กราฟแสดงผลยอดขายรายเดือน</h2>
         </div>
     </main>
-
+</div>
     <footer>
         <address>เรามาสกีบีดี้ด้วยกันเถอะ</address>
     </footer>

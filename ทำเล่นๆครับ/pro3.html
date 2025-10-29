@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มเอกสาร - ขั้นตอนที่ 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>แบบฟอร์มการกรอกเอกสาร</h1>
+        <h2>ขั้นตอนที่ 3: ตรวจสอบและยืนยัน</h2>
+        
+        <div id="summary">
+            <p>ชื่อ-นามสกุล: <span id="displayFullName">...</span></p>
+            <p>หมายเลขบัตรประชาชน: <span id="displayIdNumber">...</span></p>
+            <p>ที่อยู่: <span id="displayAddress">...</span></p>
+        </div>
+        
+        <form id="finalForm" action="submit.php" method="POST"> 
+            
+            <input type="hidden" id="hiddenFullName" name="fullName">
+            <input type="hidden" id="hiddenIdNumber" name="idNumber">
+            <input type="hidden" id="hiddenAddress" name="address">
+
+            <label>
+                <input type="checkbox" name="agreement" required> ข้าพเจ้ายืนยันว่าข้อมูลข้างต้นถูกต้อง
+            </label><br><br>
+
+            <button type="button" onclick="window.history.back()">&lt; ย้อนกลับ</button>
+            <button type="submit" class="submit-button">ส่งเอกสาร ✅</button>
+        </form>
+
+        <p class="step-indicator">หน้า 3 จาก 3</p>
+    </div>
+</body>
+</html>
