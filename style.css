@@ -12,7 +12,7 @@ box-sizing: border-box;
 }
 body {
 background-color: var(--background-color);
-font-family: 'Poppins', sans-serif; 
+font-family: "Krub", sans-serif;
 color: var(--text-color); 
 }
 .page-header {
@@ -32,7 +32,9 @@ font-size: 24px;
 background-color: var(--surface-color);
 padding: 20px;
 border: 1px solid var(--border-color);
-margin: 10px;
+border-radius: 8px;
+box-shadow: 0 2px 4px #474646;
+
 }
 
 .dasboad-container{
@@ -71,6 +73,10 @@ margin: 10px;
 .main-content{
     flex-grow: 1;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
 }
 
 .user-Profile{
