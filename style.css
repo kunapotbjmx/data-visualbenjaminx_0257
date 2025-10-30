@@ -87,3 +87,16 @@ box-shadow: 0 2px 4px #474646;
 .sidebar li a:hover{
     background-color: #c5bfbf;
 }
+
+@media (max-width: 768px){
+    .dasboad-container{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+        padding: 10px;
+    }
+    .main-content{
+        grid-template-columns: 1fr;
+    }
+}
